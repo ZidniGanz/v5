@@ -20,7 +20,8 @@ start()}
 zaa.ev.on('messages.upsert', async(zid) =>{
     if (!zid.messages) return
     const z = zid.messages[0]
-    zaa.sendMessage(z.key.remoteJid, { text 'okk'})
+    if (!z.key.fromMe) return 
+    zaa.sendMessage(z.key.remoteJid, { text: 'okk'})
    })
 
 }
