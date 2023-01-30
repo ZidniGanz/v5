@@ -1,0 +1,10 @@
+{
+   "type": "commonjs",
+  "scripts": {
+    "start": "node ."
+  },
+   "dependencies": {
+    "@adiwajshing/baileys": "4.4.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+  }
